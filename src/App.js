@@ -178,12 +178,12 @@ const About = () => (
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '400px',
+        minHeight: '200px',
         justifyContent: 'space-around'
       }}>
-      <h1>HTML / CSS / JavaScript</h1>
-      <h1>ReactJs / Apollo Client</h1>
-      <h1>Firebase / MongoDB / Prisma / Graphql / Apollo Server</h1>
+      <h3>HTML / CSS / JavaScript</h3>
+      <h3>ReactJs / Apollo Client</h3>
+      <h3>Firebase / MongoDB / Prisma / Graphql / Apollo Server</h3>
     </div>
   </div>
 )
