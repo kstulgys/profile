@@ -37,8 +37,7 @@ function Sidebar() {
                 <li
                   className={`sidebar-item ${
                     '/' === location.pathname ? 'sidebar-item--active' : 'no'
-                  } `}
-                >
+                  } `}>
                   <Link to="/">Me</Link>
                 </li>
                 <li
@@ -46,8 +45,7 @@ function Sidebar() {
                     '/About' === location.pathname
                       ? 'sidebar-item--active'
                       : 'no'
-                  } `}
-                >
+                  } `}>
                   <Link to="/About">About</Link>
                 </li>
                 <li
@@ -55,8 +53,7 @@ function Sidebar() {
                     '/Portfolio' === location.pathname
                       ? 'sidebar-item--active'
                       : 'no'
-                  } `}
-                >
+                  } `}>
                   <Link to="/Portfolio">Portfolio</Link>
                 </li>
                 <li
@@ -64,8 +61,7 @@ function Sidebar() {
                     '/Contact' === location.pathname
                       ? 'sidebar-item--active'
                       : 'no'
-                  } `}
-                >
+                  } `}>
                   <Link to="/Contact">Contact</Link>
                 </li>
               </>
@@ -94,8 +90,7 @@ function Main() {
         <a
           href="https://github.com/kstulgys"
           target="_blank"
-          className="btn btn--white btn--animated"
-        >
+          className="btn btn--white btn--animated">
           Hire me
         </a>
       </div>
@@ -175,7 +170,23 @@ function PortfolioItem({ item: { img, title, paragraph, tile, git, live } }) {
   )
 }
 
-const About = () => <h1>About</h1>
+const About = () => (
+  <div className="about" style={{ textAlign: 'center' }}>
+    <div
+      className=""
+      style={{
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '400px',
+        justifyContent: 'space-around'
+      }}>
+      <h1>HTML / CSS / JavaScript</h1>
+      <h1>ReactJs / Apollo Client</h1>
+      <h1>Firebase / MongoDB / Prisma / Graphql / Apollo Server</h1>
+    </div>
+  </div>
+)
 const Portfolio = () => (
   <div className="portfolio">
     <section className="portfolio-items">
